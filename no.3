@@ -1,0 +1,103 @@
+var json = [{
+    "id" : "mridul", 
+    "msg"   : "For the given JSON iterate over all for loops (for, for in, for of, forEach)",
+    "task" : "zen portal task",
+    "mail": "mridul@gmail.com"
+},
+{
+    "id" : "raja2", 
+    "msg"   : "For the given JSON iterate over all for loops (for, for in, for of, forEach)",
+    "task" : "zen portal task",
+    "mail": "rajarat6@gmail.com"
+}];
+//for loop
+for(var i = 0; i < json.length; i++) {
+    var obj = json[i];
+
+    console.log(obj.id);
+    console.log(obj.msg);
+    console.log(obj.task);
+    console.log(obj.mail);
+
+}
+//for Each
+json.forEach(function(obj) { console.log(obj.msg); });
+
+//for In
+for (var key in json) {
+if (json.hasOwnProperty(key)) {
+  console.log(json[key].id);
+  //console.log(json[key].msg);
+ 
+}
+}
+//for Of
+let text = "";
+for (let x of json[key].id) {
+ text += x; 
+}
+ console.log(text);
+ 
+ 
+ //Create your own resume data in JSON format
+ 
+ let myResume={
+    "basics": {
+      "name": "Mridul Agrahari",
+      "email": "mridul2me@gamil.com",
+      "phone": 8299860734,
+      "degree": "B.E",
+      "location": {
+        "address": "15/16 Sainath Enclave ShenoyNagar",
+        "postalCode": 206002,
+        "city": "lucknow",
+        "state": "uttarpradesh",
+        "country": "India"
+      },
+      "profiles": [
+        {
+          "website": "https://www.linkedin.com/in/rajarajan-t-685958219/",
+          "github":"https://github.com/RAJARAJAN-RT"
+        }
+      ]
+    },
+    "work": [
+      {
+        "company": "The Photophilehub PVT",
+        "position": "Business Executive",
+        "startDate": "2020-11-04",
+        "endDate": "2021-08-15",
+        "summary": "i am the business executive handling various task and gaining lots of experience",
+      },
+    ],
+    "education": [
+      {
+        "institution": "Ambalika institute of management and technology",
+        "department": "Mechatronics",
+        "studyType": "fulltime",
+        "batch start year": 2015,
+        "batch end year": 2019,
+        "gpa": 7.5,
+      }
+    ],
+    "skills": [
+      {
+        "name": "python,javascript",
+        "level": "beginer",
+        "project": [
+          "automatic attendance maintaing system using python language"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "Enlish",
+      }
+    ],
+    "interests": [
+      {
+        "name": "script writter,youtuber,",
+      }
+    ]
+  }
+  console.log(myResume);
